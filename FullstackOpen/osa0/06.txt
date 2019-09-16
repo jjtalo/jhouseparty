@@ -1,0 +1,17 @@
+note over selain:
+Käyttäjä syöttää tekstikenttään tekstin ja painaa save
+end note
+
+selain->palvelin: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
+
+selain-->JavaScript: document.getElementById('notes_form')
+
+JavaScript-->palvelin: notes.push(note)
+
+palvelin-->selain: Status code:201 Created
+
+note over selain:
+Palvelin ei uudelleenohjaa sivulle, kuten edellisessä tehtävässä
+end note
+
+
